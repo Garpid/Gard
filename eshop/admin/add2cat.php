@@ -1,0 +1,24 @@
+<?
+require "secure/session.inc.php";
+require "../inc/lib.inc.php";
+require "../inc/db.inc.php";
+?>
+<html>
+<head>
+	<title>Форма добавления товара в каталог</title>
+	<link rel="stylesheet" type="text/css" href="/inc/style.css" />
+</head>
+<body>
+	<form action="save2cat.php" method="post">
+		<p>Название: <input type="text" name="title" size="100">
+		<p>Автор: <input type="text" name="author" size="50">
+		<p>Год издания: <input type="text" name="pubyear" size="4">
+		<p>Цена: <input type="text" name="price" size="6"> руб.
+		<p><input type="submit" value="Добавить">
+	</form>
+	<ul>
+	    <li><a href='/eshop/admin'>Назад</a></li>
+		<li><a href='/eshop/catalog.php'>Вернуться в каталог</a></li>
+	</ul>
+</body>
+</html>
